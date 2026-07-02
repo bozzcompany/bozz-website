@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  trailingSlash: true,
+  async rewrites() {
+    return [
+      {
+        source: '/web/:project/',
+        destination: '/web/:project/index.html',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
