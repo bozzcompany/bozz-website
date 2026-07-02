@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hotel, Creche e Estética Canina na Zona Sul de Porto Alegre. Muito espaço, diversão, piscina no verão e cuidado profissional para o seu melhor amigo.">
+  <meta name="keywords" content="creche canina porto alegre, hotel para cachorros porto alegre, banho e tosa zona sul poa, tres peludos porto alegre, pet daycare porto alegre">
+  <meta name="author" content="Três Peludos">
+  
+  <title>Hotel e Creche Três Peludos - O Paraíso do seu Pet na Zona Sul</title>
+  
+  <!-- FontAwesome para ícones (opcional/remoto para carregamento de vetores de forma moderna) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVEGAÇÃO -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-icon">🐾</span>
+        <span class="logo-text">Três Peludos</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="https://wa.me/5551999412850?text=Olá! Gostaria de agendar uma visita para conhecer o espaço." target="_blank" class="btn btn-whatsapp" id="nav-cta-whatsapp">
+          <i class="fab fa-whatsapp"></i> (51) 99941-2850
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-rating">
+          <div class="rating-stars">★★★★★</div>
+          <span class="rating-text">4.9/5 no Google Maps (57 avaliações)</span>
+        </div>
+        <h1>O paraíso com piscina e diversão que seu melhor amigo merece</h1>
+        <p>Um espaço completo de hotel, creche (daycare) e estética canina na Zona Sul de Porto Alegre. Cuidado profissional, carinho de verdade e espaço de sobra para correr.</p>
+        <div class="hero-cta">
+          <a href="#servicos" class="btn btn-primary" id="hero-btn-services">Conhecer Serviços</a>
+          <a href="https://wa.me/5551999412850?text=Olá! Gostaria de falar sobre a hospedagem do meu pet." target="_blank" class="btn btn-outline" id="hero-btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Fale Conosco
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="assets/hero-dog.jpg" alt="Cachorro Golden Retriever feliz correndo no gramado" class="hero-img">
+        <div class="floating-badge">
+          <span class="badge-icon">☀️</span>
+          <div class="badge-content">
+            <div class="badge-title">Piscina & Picolé</div>
+            <div class="badge-subtitle">Diversão garantida no verão!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services section-padding" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nossos Serviços</h2>
+        <p>Criamos um ambiente seguro e super divertido com tudo o que seu cão precisa para se sentir em casa.</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Serviço 1: Creche -->
+        <div class="service-card">
+          <div class="service-image">
+            <img src="assets/daycare-dogs.jpg" alt="Grupo de cachorrinhos brincando no gramado do daycare">
+            <span class="service-badge">Mais Procurado</span>
+          </div>
+          <div class="service-content">
+            <h3>Creche (Daycare)</h3>
+            <p>Gastou energia, fez amigos e se divertiu! Nossa creche conta com rotinas de enriquecimento ambiental, socialização e muito espaço ao ar livre para correr.</p>
+            <ul class="service-features">
+              <li>Supervisão 100% ativa</li>
+              <li>Piscina liberada no verão</li>
+              <li>Picolés artesanais de frutas</li>
+              <li>Atividades cognitivas e físicas</li>
+            </ul>
+            <a href="https://wa.me/5551999412850?text=Olá! Quero saber mais sobre os planos da Creche." target="_blank" class="btn btn-primary" id="btn-service-creche">Falar com a Equipe</a>
+          </div>
+        </div>
+        
+        <!-- Serviço 2: Hotel -->
+        <div class="service-card">
+          <div class="service-image">
+            <img src="assets/pool-dog.jpg" alt="Golden Retriever brincando em uma piscina canina azul">
+          </div>
+          <div class="service-content">
+            <h3>Hospedagem (Hotel)</h3>
+            <p>Vai viajar? Seu melhor amigo vai curtir as férias dele aqui! Hospedagem humanizada, com acompanhamento, conforto térmico, segurança e rotina personalizada.</p>
+            <ul class="service-features">
+              <li>Monitores dedicados 24h</li>
+              <li>Envio diário de fotos e vídeos</li>
+              <li>Dormitórios confortáveis</li>
+              <li>Rotina integrada com a Creche</li>
+            </ul>
+            <a href="https://wa.me/5551999412850?text=Olá! Quero consultar vagas e tarifas do Hotel." target="_blank" class="btn btn-outline" id="btn-service-hotel">Consultar Vagas</a>
+          </div>
+        </div>
+        
+        <!-- Serviço 3: Banho e Tosa -->
+        <div class="service-card">
+          <div class="service-image">
+            <img src="assets/grooming-dog.jpg" alt="Cãozinho após banho e tosa, limpo e escovado">
+          </div>
+          <div class="service-content">
+            <h3>Banho e Tosa</h3>
+            <p>Seu pet cheiroso por dias! Serviço de estética canina focado no bem-estar, com profissionais experientes e produtos premium para peles sensíveis.</p>
+            <ul class="service-features">
+              <li>Banho relaxante e hidratante</li>
+              <li>Tosa na tesoura ou máquina</li>
+              <li>Livre de estresse no atendimento</li>
+              <li>Cheirinho maravilhoso de longa duração</li>
+            </ul>
+            <a href="https://wa.me/5551999412850?text=Olá! Gostaria de agendar um banho e tosa para meu pet." target="_blank" class="btn btn-outline" id="btn-service-banho">Agendar Horário</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="diferenciais section-padding" id="diferenciais">
+    <div class="container diferenciais-grid">
+      <div class="diferenciais-img-wrapper">
+        <img src="assets/pool-dog.jpg" alt="Golden Retriever mergulhando na piscina no verão" class="diferenciais-img">
+      </div>
+      <div class="diferenciais-content">
+        <span class="diferenciais-subtitle">Por que nos escolher?</span>
+        <h2>O melhor espaço pet da Zona Sul de Porto Alegre</h2>
+        <p>O Hotel e Creche Três Peludos foi idealizado para ser o segundo lar do seu pet. Unimos uma estrutura física privilegiada a uma equipe que realmente ama o que faz.</p>
+        
+        <div class="diferenciais-list">
+          <div class="diferencial-item">
+            <div class="diferencial-icon">☀️</div>
+            <div class="diferencial-text">
+              <h3>Estrutura de Lazer Completa</h3>
+              <p>Ampla área ao ar livre, piscina canina sob medida e atividades refrescantes no calor, como picolés saudáveis de frutas.</p>
+            </div>
+          </div>
+          
+          <div class="diferencial-item">
+            <div class="diferencial-icon">🛡️</div>
+            <div class="diferencial-text">
+              <h3>Confiança e Transparência</h3>
+              <p>Sabemos da saudade! Enviamos relatórios, fotos e vídeos ao longo do dia para você acompanhar a felicidade do seu amigo de perto.</p>
+            </div>
+          </div>
+          
+          <div class="diferencial-item">
+            <div class="diferencial-icon">❤️</div>
+            <div class="diferencial-text">
+              <h3>Atendimento sem Estresse</h3>
+              <p>Cada pet é único. Respeitamos o tempo de adaptação e os limites de cada animal, garantindo uma experiência leve no banho ou na hospedagem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS (GOOGLE REVIEWS) -->
+  <section class="reviews section-padding" id="avaliacoes">
+    <div class="container">
+      <div class="section-header">
+        <h2>O que dizem os papais e mamães pet</h2>
+        <p>Com nota máxima de 4.9 estrelas no Google, nosso compromisso é ver os cães saindo sempre felizes!</p>
+      </div>
+      
+      <div class="reviews-grid">
+        <!-- Depoimento 1 -->
+        <div class="review-card">
+          <div class="review-user">
+            <div class="review-avatar">AL</div>
+            <div class="review-info">
+              <h4>Alexandra Lenz</h4>
+              <span class="review-meta">Local Guide · Google Maps</span>
+            </div>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">"Super recomendo!! Cheguei até o local por indicação, e realmente o atendimento é perfeito, nossa cachorrinha saiu feliz e não estressada do banho e tosa. Parabéns!!!! Não deixo mais vocês rsrsrsrs"</p>
+        </div>
+        
+        <!-- Depoimento 2 -->
+        <div class="review-card">
+          <div class="review-user">
+            <div class="review-avatar">MB</div>
+            <div class="review-info">
+              <h4>Matheus Mônego Bandeira</h4>
+              <span class="review-meta">Cliente Satisfeito · Google Maps</span>
+            </div>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">"Melhor creche e pet da zona sul. Não há a menor dúvida do atendimento e qualidade do serviço prestado. O pessoal é super atencioso e os pets são tratados super bem. O serviço de banho e tosa é maravilhoso, o pet fica cheiroso por dias. Recomendo a todos da zona sul que procuram por qualidade e confiabilidade no serviço oferecido."</p>
+        </div>
+        
+        <!-- Depoimento 3 -->
+        <div class="review-card">
+          <div class="review-user">
+            <div class="review-avatar">JF</div>
+            <div class="review-info">
+              <h4>Júlia Fonseca</h4>
+              <span class="review-meta">Local Guide · Google Maps</span>
+            </div>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">"Meus doguinhos amaaaam ir na Três Peludos! Eles tem um ótimo serviço de creche e hotel. Muitos aumigos pra brincar e correr, no verão tem picolé de frutas e piscina pra matar o calor. Os tios da Três Peludos são maravilhosos! Dão atenção..."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NÓS -->
+  <section class="about section-padding" id="sobre">
+    <div class="container about-grid">
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">4.9</div>
+          <div class="stat-label">Estrelas no Google</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">57+</div>
+          <div class="stat-label">Avaliações Reais</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Serviços Integrados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Amor e Dedicação</div>
+        </div>
+      </div>
+      
+      <div class="about-content">
+        <h2>Mais que um hotel pet, uma extensão da sua família</h2>
+        <div class="about-text">
+          <p>Localizado no bairro Cristal, na Zona Sul de Porto Alegre, o Hotel e Creche Três Peludos nasceu do desejo de oferecer um ambiente que alie segurança e bem-estar físico e emocional para os cães.</p>
+          <p>Entendemos que deixar o seu melhor amigo sob cuidados de terceiros exige confiança absoluta. Por isso, investimos em uma equipe treinada para realizar manejo gentil e supervisionar todas as interações e brincadeiras com base no comportamento de cada cão.</p>
+          <p>Nosso espaço foi todo adaptado com pisos adequados, grades de proteção e áreas de lazer ao ar livre para proporcionar a melhor estadia de Porto Alegre.</p>
+        </div>
+        <a href="https://wa.me/5551999412850?text=Olá! Quero agendar uma visita para conhecer vocês." target="_blank" class="btn btn-primary" id="btn-about-cta">Conhecer o Espaço de Perto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO & LOCALIZAÇÃO -->
+  <section class="contact section-padding" id="contato">
+    <div class="container contact-grid">
+      <!-- Info Card -->
+      <div class="contact-info-card">
+        <div class="contact-heading">
+          <h3>Fale Conosco</h3>
+          <p>Dúvidas, orçamentos ou agendamentos? Mande uma mensagem ou venha nos visitar!</p>
+        </div>
+        
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-detail-text">
+              <h4>Endereço</h4>
+              <p>Av. Wenceslau Escobar, 3229 - Cristal, Porto Alegre - RS, 91900-000</p>
+            </div>
+          </div>
+          
+          <div class="contact-detail-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-detail-text">
+              <h4>Telefone / WhatsApp</h4>
+              <p>(51) 99941-2850</p>
+            </div>
+          </div>
+          
+          <div class="contact-detail-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-detail-text">
+              <h4>Horário de Funcionamento</h4>
+              <p>Segunda a Sexta: 07:30 às 19:30<br>Abre quinta às 07:30</p>
+            </div>
+          </div>
+        </div>
+        
+        <a href="https://wa.me/5551999412850?text=Olá! Gostaria de tirar algumas dúvidas." target="_blank" class="btn btn-whatsapp" id="btn-contact-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+        </a>
+      </div>
+      
+      <!-- Styled Map Card -->
+      <div class="contact-map-card">
+        <div class="map-placeholder">
+          <!-- Simulação visual de mapa com pino dinâmico -->
+          <div class="map-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="map-badge">
+            <h4>Nossa Localização</h4>
+            <p>Av. Wenceslau Escobar, 3229 - Cristal. Próximo ao Barra Shopping Sul.</p>
+            <a href="https://maps.google.com/?q=Av.+Wenceslau+Escobar,+3229+-+Cristal,+Porto+Alegre+-+RS,+91900-000" target="_blank" class="btn btn-secondary" id="btn-map-route">
+              <i class="fas fa-directions"></i> Ver Rotas no Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER CTA FINAL -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Que tal marcar uma tarde experimental grátis?</h2>
+      <p>Traga o seu cãozinho para conhecer nossos tios, fazer novos aumigos e gastar muita energia na Zona Sul!</p>
+      <a href="https://wa.me/5551999412850?text=Olá! Gostaria de agendar uma tarde experimental para o meu cão." target="_blank" class="btn btn-primary" id="btn-banner-cta">
+        <i class="fab fa-whatsapp"></i> Agendar Tarde Experimental
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>🐾 Três Peludos</h3>
+        <p>O melhor espaço pet da Zona Sul de Porto Alegre. Creche, Hotelaria e Estética sob medida para quem você mais ama.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5551999412850" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Creche Canina</a></li>
+          <li><a href="#servicos">Hospedagem & Hotel</a></li>
+          <li><a href="#servicos">Banho & Tosa</a></li>
+          <li><a href="#servicos">Piscina no Verão</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Nossos Serviços</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#avaliacoes">Depoimentos</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li>(51) 99941-2850</li>
+          <li>Av. Wenceslau Escobar, 3229</li>
+          <li>Cristal, Porto Alegre - RS</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Hotel e Creche Três Peludos. Todos os direitos reservados.</p>
+      <p>Desenvolvido para apresentação comercial.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5551999412850?text=Olá! Vim pelo site e gostaria de tirar algumas dúvidas." target="_blank" class="whatsapp-float" aria-label="Fale conosco no WhatsApp" id="whatsapp-floating-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sul Lanches e Porções - A melhor lanxeria da Zona Sul de Porto Alegre. Xis prensado de verdade, porções generosas, alaminutas deliciosas e entrega rápida.">
+  <meta name="keywords" content="xis porto alegre, melhor xis zona sul poa, sul lanches porto alegre, bauru porto alegre, tele entrega xis poa, alaminuta porto alegre">
+  <meta name="author" content="Sul Lanches e Porções">
+  
+  <title>Sul Lanches e Porções - O Xis de Verdade da Zona Sul</title>
+  
+  <!-- FontAwesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVEGAÇÃO -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-icon">🍔</span>
+        <span class="logo-text">Sul Lanches</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="https://wa.me/555132645827?text=Olá! Gostaria de fazer um pedido para entrega." target="_blank" class="btn btn-primary" id="header-order-btn">
+          <i class="fas fa-shopping-cart"></i> Pedir Agora
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-rating">
+          <div class="rating-stars">★★★★★</div>
+          <span class="rating-text">4.5/5 no Google Maps (1.415+ avaliações)</span>
+        </div>
+        <h1>O Xis de verdade e as porções mais <span>generosas</span> da Zona Sul</h1>
+        <p>Um clássico de Porto Alegre com hambúrguer de verdade, maionese artesanal sensacional e ingredientes frescos. Venha saborear ou peça sua tele-entrega!</p>
+        <div class="hero-cta">
+          <a href="#cardapio" class="btn btn-secondary" id="hero-btn-menu">Ver Cardápio</a>
+          <a href="https://wa.me/555132645827?text=Olá! Quero pedir pelo WhatsApp." target="_blank" class="btn btn-whatsapp" id="hero-btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Pedir via WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="assets/xis-hero.jpg" alt="Xis gaúcho prensado bem recheado com queijo derretendo" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO COM TABS -->
+  <section class="menu-section section-padding" id="cardapio">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nosso Cardápio</h2>
+        <p>Preparamos lanches de alta qualidade com preços honestos que cabem no seu bolso.</p>
+      </div>
+
+      <!-- Abas de Navegação -->
+      <div class="menu-tabs-container">
+        <button class="tab-btn active" onclick="openCategory(event, 'xis')">Xis (Cheese)</button>
+        <button class="tab-btn" onclick="openCategory(event, 'california')">Xis Califórnia</button>
+        <button class="tab-btn" onclick="openCategory(event, 'bauru')">Baurús</button>
+        <button class="tab-btn" onclick="openCategory(event, 'alaminuta')">A la Minuta</button>
+        <button class="tab-btn" onclick="openCategory(event, 'dogs')">Dogs & Torradas</button>
+        <button class="tab-btn" onclick="openCategory(event, 'porcoes')">Porções & Extras</button>
+      </div>
+
+      <!-- CONTEÚDO DAS TABS -->
+      
+      <!-- Categoria: Xis -->
+      <div id="xis" class="tab-content active">
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Salada</h3>
+                <span class="menu-item-price">R$ 24,00</span>
+              </div>
+              <p class="menu-item-desc">Hambúrguer de verdade, alface, tomate, maionese artesanal, milho, queijo derretido e ovo.</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Salada c/ Bacon</h3>
+                <span class="menu-item-price">R$ 29,00</span>
+              </div>
+              <p class="menu-item-desc">Hambúrguer, muito bacon crocante, alface, tomate, maionese, milho, queijo e ovo.</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Frango</h3>
+                <span class="menu-item-price">R$ 27,00</span>
+              </div>
+              <p class="menu-item-desc">Filé de frango grelhado e picado, alface, tomate, maionese, milho, queijo e ovo.</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Coração c/ Bacon <span class="menu-item-badge">Mais Pedido</span></h3>
+                <span class="menu-item-price">R$ 36,00</span>
+              </div>
+              <p class="menu-item-desc">Coração de frango temperado na chapa, bacon, alface, tomate, maionese, milho, queijo e ovo.</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Coração</h3>
+                <span class="menu-item-price">R$ 31,00</span>
+              </div>
+              <p class="menu-item-desc">Coração de frango grelhado na chapa, alface, tomate, maionese, milho, queijo e ovo.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Lombo</h3>
+                <span class="menu-item-price">R$ 30,00</span>
+              </div>
+              <p class="menu-item-desc">Lombo suíno grelhado na chapa, alface, tomate, maionese, milho, queijo e ovo.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Calabresa</h3>
+                <span class="menu-item-price">R$ 30,00</span>
+              </div>
+              <p class="menu-item-desc">Calabresa defumada fatiada na chapa, alface, tomate, maionese, milho, queijo e ovo.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Filé</h3>
+                <span class="menu-item-price">R$ 40,00</span>
+              </div>
+              <p class="menu-item-desc">Filé mignon picado de alta qualidade, alface, tomate, maionese, milho, queijo e ovo.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Filé c/ Bacon</h3>
+                <span class="menu-item-price">R$ 45,00</span>
+              </div>
+              <p class="menu-item-desc">Filé mignon picado, tiras de bacon crocantes, alface, tomate, maionese, milho, queijo e ovo.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Vegetariano</h3>
+                <span class="menu-item-price">R$ 26,00</span>
+              </div>
+              <p class="menu-item-desc">Queijo derretido em dobro, palmito, cebola na chapa, milho, alface, tomate, maionese e ovo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Categoria: Xis Califórnia -->
+      <div id="california" class="tab-content">
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-da Casa à Califórnia</h3>
+                <span class="menu-item-price">R$ 37,00</span>
+              </div>
+              <p class="menu-item-desc">Filé de frango, alface, tomate, maionese, queijo, pêssego, figo e abacaxi grelhados.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Salada à Califórnia</h3>
+                <span class="menu-item-price">R$ 35,00</span>
+              </div>
+              <p class="menu-item-desc">Hambúrguer, alface, tomate, maionese, queijo, ovo, pêssego, figo e abacaxi.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Coração à Califórnia</h3>
+                <span class="menu-item-price">R$ 42,00</span>
+              </div>
+              <p class="menu-item-desc">Coração de frango, alface, tomate, maionese, queijo, pêssego, figo e abacaxi.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Lombo à Califórnia</h3>
+                <span class="menu-item-price">R$ 40,00</span>
+              </div>
+              <p class="menu-item-desc">Lombo suíno, alface, tomate, maionese, queijo, pêssego, figo e abacaxi.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>X-Filé à Califórnia</h3>
+                <span class="menu-item-price">R$ 51,00</span>
+              </div>
+              <p class="menu-item-desc">Filé mignon, alface, tomate, maionese, queijo, pêssego, figo e abacaxi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Categoria: Baurus -->
+      <div id="bauru" class="tab-content">
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Baurú de Alcatra c/ fritas</h3>
+                <span class="menu-item-price">R$ 32,00</span>
+              </div>
+              <p class="menu-item-desc">No pão d'água macio: Alcatra grelhada, alface, maionese, tomate, queijo derretido, ovo e porção de batatas fritas crocantes.</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Baurú de Filé c/ fritas <span class="menu-item-badge">Mais Pedido</span></h3>
+                <span class="menu-item-price">R$ 42,00</span>
+              </div>
+              <p class="menu-item-desc">Filé mignon grelhado na chapa, alface, maionese, tomate, queijo, ovo e porção de fritas sequinhas.</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Baurú de Picanha c/ fritas</h3>
+                <span class="menu-item-price">R$ 42,00</span>
+              </div>
+              <p class="menu-item-desc">Picanha grelhada fatiada na hora, alface, maionese, tomate, queijo, ovo e fritas.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Baurú ao Prato</h3>
+                <span class="menu-item-price">R$ 42,00</span>
+              </div>
+              <p class="menu-item-desc">Filé mignon grelhado, bacon, queijo, milho, ovo e salada de maionese servidos ao prato com fatias de pão de forma.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Categoria: A la Minuta -->
+      <div id="alaminuta" class="tab-content">
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Alaminuta de Alcatra c/ Fritas <span class="menu-item-badge">Patrimônio</span></h3>
+                <span class="menu-item-price">R$ 31,00</span>
+              </div>
+              <p class="menu-item-desc">Prato feito completo com arroz branco, feijão caseiro, ovo frito com gema mole, batata frita e bife de alcatra grelhado.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Alaminuta de Frango c/ Polenta</h3>
+                <span class="menu-item-price">R$ 31,00</span>
+              </div>
+              <p class="menu-item-desc">Arroz, feijão, ovo, polenta frita crocante com queijo ralado e bife de filé de frango grelhado.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Alaminuta de Filé Mignon c/ Fritas</h3>
+                <span class="menu-item-price">R$ 45,00</span>
+              </div>
+              <p class="menu-item-desc">Bife suculento de filé mignon grelhado, arroz, feijão, ovo e batata frita.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Alaminuta de Picanha c/ Aipim</h3>
+                <span class="menu-item-price">R$ 45,00</span>
+              </div>
+              <p class="menu-item-desc">Bife de picanha na chapa, arroz, feijão, ovo frito e aipim frito super crocante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Categoria: Dogs & Torradas -->
+      <div id="dogs" class="tab-content">
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Dog Simples</h3>
+                <span class="menu-item-price">R$ 18,00</span>
+              </div>
+              <p class="menu-item-desc">Pão de cachorro quente, 1 salsicha de qualidade, molho de tomate caseiro, alface, maionese, queijo e milho.</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Dog Especial</h3>
+                <span class="menu-item-price">R$ 21,00</span>
+              </div>
+              <p class="menu-item-desc">Pão de cachorro quente, 2 salsichas, muito molho de tomate, alface, maionese, queijo e milho.</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Torrada Simples</h3>
+                <span class="menu-item-price">R$ 17,00</span>
+              </div>
+              <p class="menu-item-desc">Duas fatias de pão de forma tostadas na prensa com maionese, presunto e queijo.</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Torrada Italiana</h3>
+                <span class="menu-item-price">R$ 22,00</span>
+              </div>
+              <p class="menu-item-desc">Pão de forma tostado na prensa com salame italiano, ovo, maionese e queijo derretido.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Categoria: Porções -->
+      <div id="porcoes" class="tab-content">
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Aipim Frito <span class="menu-item-badge">Favorito</span></h3>
+                <span class="menu-item-price">R$ 27,00</span>
+              </div>
+              <p class="menu-item-desc">Porção generosa de aipim frito, crocante por fora e macio por dentro.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Batata Frita</h3>
+                <span class="menu-item-price">R$ 29,00</span>
+              </div>
+              <p class="menu-item-desc">Porção grande de batata frita bem sequinha, crocante e levemente salgada.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Coração de Frango</h3>
+                <span class="menu-item-price">R$ 55,00</span>
+              </div>
+              <p class="menu-item-desc">Porção generosa de corações de frango acebolados grelhados na chapa.</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Filé Mignon Acebolado</h3>
+                <span class="menu-item-price">R$ 75,00</span>
+              </div>
+              <p class="menu-item-desc">Filé mignon em tiras acebolado na chapa. Acompanha fatias de pão de forma tostadas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extra Cards e Adicionais -->
+      <div class="menu-extra-info">
+        <div class="extra-card">
+          <h4><i class="fas fa-plus-circle text-primary"></i> Adicione mais sabor ao seu lanche</h4>
+          <div class="addons-list">
+            <div class="addon-item">
+              <span class="addon-name">Cheddar Cremoso</span>
+              <span class="addon-price">+ R$ 6,00</span>
+            </div>
+            <div class="addon-item">
+              <span class="addon-name">Catupiry Original</span>
+              <span class="addon-price">+ R$ 6,00</span>
+            </div>
+            <div class="addon-item">
+              <span class="addon-name">Cobertura de Queijo</span>
+              <span class="addon-price">+ R$ 6,00</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hours-card">
+          <h4><i class="fas fa-clock"></i> Horário de Atendimento</h4>
+          <p>Todos os dias</p>
+          <p>A partir das 11:00h</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA DE DESTAQUES -->
+  <section class="highlights-gallery section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>Destaques Gastronômicos</h2>
+        <p>Alguns dos pratos mais pedidos e adorados pelos clientes da Zona Sul.</p>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="assets/xis-hero.jpg" alt="Xis Gaúcho prensado">
+          <div class="gallery-overlay">
+            <h4>Xis Coração c/ Bacon</h4>
+            <span>O mais vendido</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="assets/alaminuta.jpg" alt="Alaminuta de Alcatra">
+          <div class="gallery-overlay">
+            <h4>Alaminuta de Alcatra</h4>
+            <span>Sabor caseiro irresistível</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="assets/porcao-aipim.jpg" alt="Porção de Aipim Frito">
+          <div class="gallery-overlay">
+            <h4>Aipim Frito Crocante</h4>
+            <span>Sequinho por fora</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="assets/dog-quente.jpg" alt="Cachorro Quente Dog Especial">
+          <div class="gallery-overlay">
+            <h4>Dog Especial (Duplo)</h4>
+            <span>Bem servido com 2 salsichas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="diferenciais section-padding" id="diferenciais">
+    <div class="container">
+      <div class="section-header">
+        <h2>Por que o Sul Lanches é Imbatível?</h2>
+        <p>Patrimônio gastronômico da Zona Sul, conquistamos clientes fiéis há mais de uma década.</p>
+      </div>
+      
+      <div class="diferenciais-grid">
+        <div class="diferencial-card">
+          <span class="diferencial-icon">🥩</span>
+          <h3>Hambúrguer de Verdade</h3>
+          <p>Diferente de outras lancherias que usam carnes finas e sem gosto, nossos lanches contam com carnes suculentas grelhadas na hora com o tempero perfeito.</p>
+        </div>
+        
+        <div class="diferencial-card">
+          <span class="diferencial-icon">🥣</span>
+          <h3>Maionese Sensacional</h3>
+          <p>Nossa maionese artesanal é o segredo do sucesso. Fresca, cremosa e com um tempero secreto que deixa qualquer lanche imbatível.</p>
+        </div>
+        
+        <div class="diferencial-card">
+          <span class="diferencial-icon">⚖️</span>
+          <h3>Melhor Custo Benefício</h3>
+          <p>Ingredientes selecionados e frescos de alta qualidade em porções generosas que realmente saciam, por um preço muito justo e acessível.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS (GOOGLE REVIEWS) -->
+  <section class="reviews section-padding" id="avaliacoes">
+    <div class="container">
+      <div class="section-header">
+        <h2>Quem prova, vira cliente fiel</h2>
+        <p>Confira o feedback real de quem frequenta e ama o Sul Lanches.</p>
+      </div>
+      
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-user">
+            <div class="review-avatar">RL</div>
+            <div class="review-info">
+              <h4>Rodrigo Leonardi</h4>
+              <span class="review-meta">Cliente Fiel · Google Maps</span>
+            </div>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">"Desde que conheci o Sul Lanches há uns 2 anos nunca mais fui em outro lugar pra comer xis e bauru. No tocante a qualidade, pra mim é imbatível. Sempre muita carne, maionese é sensacional, produtos frescos e bem servido. Batatinha frita bem sequinha. Os proprietários são muito queridos!"</p>
+        </div>
+        
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-user">
+            <div class="review-avatar">AL</div>
+            <div class="review-info">
+              <h4>Alice Leonardi</h4>
+              <span class="review-meta">Cliente Satisfeita · Google Maps</span>
+            </div>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">"Ambiente simples mas atendimento super rápido, comida saborosa e preço justo! Frequento a anos e a qualidade nunca cai."</p>
+        </div>
+        
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-user">
+            <div class="review-avatar">LW</div>
+            <div class="review-info">
+              <h4>Luciano Wislocki</h4>
+              <span class="review-meta">Local Guide · Google Maps</span>
+            </div>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">"Uma das melhores lancherias de Porto Alegre, patrimônio da zona sul. É um dos melhores xis de Porto Alegre, se não o melhor, custo benefício tenho certeza que é o melhor. Esse Xis tem hambúrguer de verdade, tempero espetacular, na medida em tudo. Parabéns!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO & DELIVERY -->
+  <section class="contact section-padding" id="contato">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <div class="contact-heading">
+          <h3>Fazer Pedido</h3>
+          <p>Entregamos quentinho na sua casa ou você pode retirar o seu pedido direto no nosso balcão!</p>
+        </div>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-text">
+              <h4>Nosso Endereço</h4>
+              <p>Av. Wenceslau Escobar, 2327 - Cristal, Porto Alegre - RS, 91900-000</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-item-text">
+              <h4>Telefone e Tele-Entrega</h4>
+              <p>(51) 3264-5827</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-item-text">
+              <h4>WhatsApp</h4>
+              <p>(51) 3264-5827 (Clique para pedir)</p>
+            </div>
+          </div>
+        </div>
+        
+        <a href="https://wa.me/555132645827?text=Olá! Gostaria de fazer um pedido de lanche." target="_blank" class="btn btn-whatsapp" id="btn-contact-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+        </a>
+      </div>
+      
+      <!-- Styled Map -->
+      <div class="contact-map">
+        <div class="map-placeholder">
+          <div class="map-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="map-badge">
+            <h4>Sul Lanches & Porções</h4>
+            <p>Av. Wenceslau Escobar, 2327 - Cristal. No coração da Zona Sul.</p>
+            <a href="https://maps.google.com/?q=Av.+Wenceslau+Escobar,+2327+-+Cristal,+Porto+Alegre+-+RS,+91900-000" target="_blank" class="btn btn-secondary" id="btn-map-routes">
+              <i class="fas fa-directions"></i> Ver Rotas no Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER CTA FINAL -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Bateu aquela fome de Xis?</h2>
+      <p>Peça agora pelo WhatsApp e receba no conforto da sua casa o melhor lanche da Zona Sul.</p>
+      <a href="https://wa.me/555132645827?text=Olá! Quero pedir um xis com fritas." target="_blank" class="btn btn-secondary" id="btn-cta-final">
+        <i class="fab fa-whatsapp"></i> Iniciar Pedido via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>🍔 Sul Lanches & Porções</h3>
+        <p>A lanchonete favorita de Porto Alegre. Servindo xis suculentos, porções generosas e alaminutas tradicionais de alta qualidade.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/555132645827" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Menu Rápido</h4>
+        <ul>
+          <li><a href="#cardapio" onclick="openCategory(null, 'xis')">Xis Tradicionais</a></li>
+          <li><a href="#cardapio" onclick="openCategory(null, 'california')">Xis Doces (Califórnia)</a></li>
+          <li><a href="#cardapio" onclick="openCategory(null, 'bauru')">Baurús no Pão</a></li>
+          <li><a href="#cardapio" onclick="openCategory(null, 'alaminuta')">A la Minuta Completa</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio Completo</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#avaliacoes">Depoimentos</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Contato e Endereço</h4>
+        <ul>
+          <li>(51) 3264-5827</li>
+          <li>Av. Wenceslau Escobar, 2327</li>
+          <li>Cristal, Porto Alegre - RS</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Sul Lanches e Porções. Todos os direitos reservados.</p>
+      <p>Desenvolvido para demonstração comercial.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/555132645827?text=Olá! Gostaria de fazer um pedido de lanche." target="_blank" class="whatsapp-float" aria-label="Peça pelo WhatsApp" id="whatsapp-floating-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- SCRIPT LEVE PARA TABS DO CARDÁPIO -->
+  <script>
+    function openCategory(evt, categoryId) {
+      // Esconder todo o conteúdo das abas
+      const tabcontents = document.getElementsByClassName("tab-content");
+      for (let i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].className = tabcontents[i].className.replace(" active", "");
+      }
+
+      // Remover classe active de todos os botões de aba
+      const tabbtns = document.getElementsByClassName("tab-btn");
+      for (let i = 0; i < tabbtns.length; i++) {
+        tabbtns[i].className = tabbtns[i].className.replace(" active", "");
+      }
+
+      // Mostrar aba ativa
+      document.getElementById(categoryId).className += " active";
+      
+      // Adicionar classe active ao botão que disparou o evento (se houver)
+      if (evt) {
+        evt.currentTarget.className += " active";
+      } else {
+        // Se chamado por link rápido, achar botão correspondente
+        for (let i = 0; i < tabbtns.length; i++) {
+          if (tabbtns[i].getAttribute("onclick").includes("'" + categoryId + "'")) {
+            tabbtns[i].className += " active";
+            break;
+          }
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
