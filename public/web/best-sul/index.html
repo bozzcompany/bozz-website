@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Redirecionamento de barra final para compatibilidade com rotas estáticas -->
+  <script>
+    if (!window.location.pathname.endsWith('/') && !window.location.pathname.endsWith('.html')) {
+      window.location.replace(window.location.pathname + '/' + window.location.search + window.location.hash);
+    }
+  </script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Best Sul Seguros - Corretora de seguros em Porto Alegre. Mais de 20 anos de credibilidade e atendimento personalizado. Simule seguro auto, residencial, vida e mais.">
+  <meta name="keywords" content="best sul seguros, corretora de seguros porto alegre, seguro auto poa, seguro residencial tristeza poa, gc do brasil seguros, cotar seguro porto alegre">
+  <meta name="author" content="Best Sul Seguros">
+  
+  <title>Best Sul Seguros | Proteção Completa e Atendimento Personalizado</title>
+  
+  <!-- FontAwesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo" id="logo-link">
+        <!-- Logo Oficial do site deles -->
+        <img src="https://cms.gcservicos.net.br/storage/app/institucional/institucional_20190201095955.png" alt="Best Sul Seguros">
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#seguros">Seguros</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#parceiros">Parceiros</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <!-- Substitua pelo WhatsApp real da corretora se necessário -->
+        <a href="https://wa.me/5551999999999?text=Olá! Gostaria de fazer uma cotação de seguros." target="_blank" class="btn btn-whatsapp" id="header-whatsapp">
+          <i class="fab fa-whatsapp"></i> <span>Fale Conosco</span>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Abrir Menu" id="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badges">
+          <div class="hero-badge-item">🛡️ Desde 1997</div>
+          <div class="hero-badge-item">🤝 Parceiro GC do Brasil</div>
+        </div>
+        <h1>A segurança que você e sua empresa precisam, com a <span>credibilidade</span> que você confia.</h1>
+        <p>Mais de 25 anos de experiência protegendo o que é mais valioso para você. Parceria sólida com as maiores seguradoras do país para garantir o melhor custo-benefício.</p>
+        
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="#seguros" class="btn btn-primary" id="hero-btn-sol">Conhecer Seguros</a>
+          <a href="#contato" class="btn btn-outline" id="hero-btn-cont">O Consultório</a>
+        </div>
+      </div>
+      
+      <!-- Card Flutuante de Cotação Rápida -->
+      <div class="quote-card">
+        <h3>Simulação Rápida</h3>
+        <p>Receba uma cotação personalizada diretamente no seu WhatsApp.</p>
+        
+        <form id="quote-form">
+          <div class="form-group">
+            <label for="name">Seu Nome</label>
+            <input type="text" id="name" class="form-control" placeholder="Digite seu nome completo" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Seu WhatsApp</label>
+            <input type="tel" id="phone" class="form-control" placeholder="(51) 99999-9999" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="insurance-type">O que deseja proteger?</label>
+            <select id="insurance-type" class="form-control" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="Automóvel">Seguro Automóvel</option>
+              <option value="Residencial">Seguro Residencial</option>
+              <option value="Vida">Seguro de Vida</option>
+              <option value="Empresarial">Seguro Empresarial</option>
+              <option value="Outros">Outras Opções</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="btn btn-accent" id="btn-submit-quote">
+            <i class="fab fa-whatsapp"></i> Solicitar Cotação
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA DE CREDIBILIDADE (ESTATÍSTICAS) -->
+  <section class="credibility-bar">
+    <div class="container credibility-grid">
+      <div class="cred-item">
+        <h3>28+</h3>
+        <p>Anos de Credibilidade</p>
+      </div>
+      <div class="cred-item">
+        <h3>20k+</h3>
+        <p>Clientes Protegidos</p>
+      </div>
+      <div class="cred-item">
+        <h3>15+</h3>
+        <p>Seguradoras Parceiras</p>
+      </div>
+      <div class="cred-item">
+        <h3>5.0★</h3>
+        <p>Avaliação dos Clientes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEGUROS (SOLUÇÕES) -->
+  <section class="solutions section-padding" id="seguros">
+    <div class="container">
+      <div class="section-header">
+        <h2>Soluções sob Medida</h2>
+        <p>Proteções completas planejadas de acordo com as necessidades da sua família ou da sua empresa.</p>
+      </div>
+      
+      <div class="solutions-grid">
+        <!-- Seguro Auto -->
+        <div class="solution-card">
+          <div class="solution-image">
+            <img src="assets/auto-insurance.jpg" alt="Painel e volante de um automóvel moderno no pôr do sol">
+          </div>
+          <div class="solution-content">
+            <h3>Seguro Automóvel</h3>
+            <p>Proteção indispensável contra colisões, roubo, furto, incêndio e danos a terceiros, além de assistência mecânica completa 24 horas por dia.</p>
+            <a href="https://wa.me/5551999999999?text=Olá! Gostaria de cotar um Seguro Automóvel." target="_blank" class="solution-link" id="sol-link-auto">Mais detalhes</a>
+          </div>
+        </div>
+        
+        <!-- Seguro Residencial -->
+        <div class="solution-card">
+          <div class="solution-image">
+            <img src="assets/home-insurance.jpg" alt="Sala de estar moderna e aconchegante com iluminação natural">
+          </div>
+          <div class="solution-content">
+            <h3>Seguro Residencial</h3>
+            <p>Tranquilidade para o seu lar. Cobertura contra incêndio, queda de raios, vendaval, roubo de bens e serviços emergenciais para chaveiro e encanador.</p>
+            <a href="https://wa.me/5551999999999?text=Olá! Gostaria de cotar um Seguro Residencial." target="_blank" class="solution-link" id="sol-link-home">Mais detalhes</a>
+          </div>
+        </div>
+        
+        <!-- Seguro de Vida -->
+        <div class="solution-card">
+          <div class="solution-image">
+            <img src="assets/life-insurance.jpg" alt="Família feliz caminhando no parque sob o sol">
+          </div>
+          <div class="solution-content">
+            <h3>Seguro de Vida</h3>
+            <p>Segurança financeira e amparo para as pessoas que você mais ama nos momentos mais delicados, com coberturas personalizadas.</p>
+            <a href="https://wa.me/5551999999999?text=Olá! Gostaria de informações sobre o Seguro de Vida." target="_blank" class="solution-link" id="sol-link-life">Mais detalhes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="diferenciais-section section-padding" id="diferenciais">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nossos Diferenciais</h2>
+        <p>Descubra por que a Best Sul é a escolha ideal para gerenciar a segurança do seu patrimônio.</p>
+      </div>
+      
+      <div class="diff-grid">
+        <!-- Diferencial 1 -->
+        <div class="diff-card">
+          <div class="diff-icon"><i class="fas fa-headset"></i></div>
+          <h3>Compromisso com a Disponibilidade</h3>
+          <p>Compromisso ético absoluto que coloca a satisfação e o suporte ao cliente no centro de todas as nossas decisões.</p>
+        </div>
+        
+        <!-- Diferencial 2 -->
+        <div class="diff-card">
+          <div class="diff-icon"><i class="fas fa-users"></i></div>
+          <h3>Equipe Altamente Qualificada</h3>
+          <p>Profissionais com qualificação permanente, prontos para entender seu perfil e indicar as melhores opções de coberturas.</p>
+        </div>
+        
+        <!-- Diferencial 3 -->
+        <div class="diff-card">
+          <div class="diff-icon"><i class="fas fa-laptop"></i></div>
+          <h3>Uso Inteligente de Tecnologia</h3>
+          <p>Sistemas modernos para mapear riscos rapidamente e garantir cotações ágeis com os melhores preços do mercado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEGURADORAS PARCEIRAS (LOGO CLOUD) -->
+  <section class="partners section-padding" id="parceiros">
+    <div class="container">
+      <div class="section-header">
+        <h2>Parceiros Estratégicos</h2>
+        <p>Trabalhamos em conjunto com as maiores e mais respeitadas seguradoras do mercado mundial.</p>
+      </div>
+      
+      <div class="partners-grid">
+        <div class="partner-logo-box"><span>Porto Seguro</span></div>
+        <div class="partner-logo-box"><span>Allianz</span></div>
+        <div class="partner-logo-box"><span>Bradesco Seguros</span></div>
+        <div class="partner-logo-box"><span>Tokio Marine</span></div>
+        <div class="partner-logo-box"><span>HDI Seguros</span></div>
+        <div class="partner-logo-box"><span>Suhai</span></div>
+        <div class="partner-logo-box"><span>Zurich</span></div>
+        <div class="partner-logo-box"><span>Sompo Seguros</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTEMUNHOS -->
+  <section class="testimonials section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>O que dizem os nossos segurados</h2>
+        <p>A confiança de nossos clientes é o nosso maior patrimônio.</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="test-card">
+          <p class="test-quote">"Atendimento excelente e consultoria muito clara. Conseguiram reduzir o custo da renovação da frota da minha empresa mantendo as mesmas coberturas."</p>
+          <div class="test-author">Carlos Eduardo S.</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Diretor Comercial</div>
+        </div>
+        <div class="test-card">
+          <p class="test-quote">"Sempre que precisei de suporte com o seguro residencial fui atendida com muita rapidez e agilidade. Equipe super prestativa!"</p>
+          <div class="test-author">Mariana L. R.</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Segurada desde 2018</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO & FORMULÁRIO -->
+  <section class="contact-section section-padding" id="contato">
+    <div class="container contact-grid">
+      <div class="contact-details">
+        <div>
+          <span class="section-intro-label" style="color: var(--secondary); margin-bottom: 12px; font-weight:700; text-transform:uppercase; letter-spacing:2px; display:block;">Fale Conosco</span>
+          <h2>Venha nos Visitar</h2>
+          <p style="color: var(--text-muted); margin-bottom: 32px;">Estamos localizados no coração do bairro Tristeza. Agende uma visita ou entre em contato pelos nossos canais.</p>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-text">
+            <h4>Endereço</h4>
+            <p>Rua Dr. Mario Totta, 1040 - Tristeza<br>Porto Alegre - RS, CEP: 91920-130</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-text">
+            <h4>E-mail</h4>
+            <p>bestsul@bestsulseguros.com.br</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
+          <div class="contact-text">
+            <h4>Horário de Atendimento</h4>
+            <p>Segunda a Sexta: 08:30 às 12:00 e das 13:15 às 18:00</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Formulário de Mensagem Simples -->
+      <div class="contact-form">
+        <h3>Enviar Mensagem</h3>
+        <form id="contact-form-elements">
+          <div class="form-group">
+            <input type="text" id="contact-name" class="form-control" placeholder="Seu Nome" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="contact-email" class="form-control" placeholder="Seu E-mail" required>
+          </div>
+          <div class="form-group">
+            <textarea id="contact-message" class="form-control" rows="4" placeholder="Sua Mensagem" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary" id="btn-send-message">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <!-- Logo -->
+        <img src="https://cms.gcservicos.net.br/storage/app/institucional/institucional_20190201095955.png" alt="Best Sul Seguros">
+        <p>Credibilidade construída com ética, transparência e compromisso constante com as reais necessidades de proteção dos nossos segurados.</p>
+        <p><strong>BEST SUL CORRETORA DE SEGUROS LTDA</strong><br>CNPJ: 01.862.808/0001-40</p>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#seguros">Seguros</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Cotações Úteis</h4>
+        <ul>
+          <li><a href="https://iamsimple.com.br/bestsulseguros" target="_blank">Câmbio</a></li>
+          <li><a href="#inicio">Seguro Automóvel</a></li>
+          <li><a href="#inicio">Seguro Residencial</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Contato Rápido</h4>
+        <ul>
+          <li>bestsul@bestsulseguros.com.br</li>
+          <li>Rua Dr. Mario Totta, 1040</li>
+          <li>Tristeza, Porto Alegre - RS</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Best Sul Seguros. Todos os direitos reservados.</p>
+      <p>Desenvolvido para demonstração comercial.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5551999999999?text=Olá! Vim pelo site e gostaria de tirar algumas dúvidas." target="_blank" class="whatsapp-float" aria-label="Fale no WhatsApp" id="whatsapp-floating-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- SCRIPT PARA HAMBÚRGUER E COTAÇÃO VIA WHATSAPP -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Menu Mobile Toggle
+      const toggleBtn = document.getElementById('mobile-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (toggleBtn && navLinks) {
+        toggleBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          const icon = toggleBtn.querySelector('i');
+          if (navLinks.classList.contains('active')) {
+            icon.className = 'fas fa-times';
+          } else {
+            icon.className = 'fas fa-bars';
+          }
+        });
+
+        // Fecha menu ao clicar nos links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            toggleBtn.querySelector('i').className = 'fas fa-bars';
+          });
+        });
+      }
+
+      // Envio do Formulário de Cotação via WhatsApp
+      const quoteForm = document.getElementById('quote-form');
+      if (quoteForm) {
+        quoteForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('name').value;
+          const phone = document.getElementById('phone').value;
+          const type = document.getElementById('insurance-type').value;
+          
+          // Formata a mensagem para o WhatsApp
+          const messageText = `Olá! Gostaria de fazer uma simulação de seguro.
+Nome: ${name}
+Telefone/WhatsApp: ${phone}
+Seguro de Interesse: ${type}`;
+          
+          const encodedText = encodeURIComponent(messageText);
+          
+          // Abre no WhatsApp (substitua o número abaixo pelo real se necessário)
+          window.open(`https://wa.me/5551999999999?text=${encodedText}`, '_blank');
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
